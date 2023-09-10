@@ -7,6 +7,7 @@
   --color-body-darker: #5c5577;
   --color-radius: #ccc;
   --border-radius: 30px;
+  --color-dark: #1a202c;
 }
 
 *,
@@ -600,4 +601,42 @@ a {
   max-height: 100%;
   opacity: 1;
   transition: all 0.3s;
+}
+/* blocks */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.block {
+  --vertical-padding: 6rem;
+  padding: var(--vertical-padding) 2rem;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--darker {
+  background-color: var(--color-dark);
+  color: #7b858b;
+}
+
+.block--darker .block__heading {
+  color: white;
+}
+
+.block--skewed-right {
+  padding-bottom: calc(var(--vertical-padding) + 4rem);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+.block--skewed-left {
+  padding-bottom: calc(var(--vertical-padding) + 4rem);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.block__header {
+  text-align: center;
 }

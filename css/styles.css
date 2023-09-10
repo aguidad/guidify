@@ -546,3 +546,58 @@ a {
     text-align: center;
   }
 }
+
+/* collapsible */
+
+.collapsible {
+  background-color: #0c0c0c;
+  padding: 1rem 2rem;
+}
+
+.collapsible__header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsible__heading {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible__content .list {
+  padding-left: 1rem;
+  color: white;
+  opacity: 0.4;
+}
+
+.collapsible--chevron:hover {
+  opacity: 0.7;
+}
+
+.collapsible--chevron {
+  transition: rotate 0.3s;
+  rotate: -90deg;
+}
+
+.collapsible--expanded .collapsible--chevron {
+  transition: rotate 0.3s;
+  rotate: 0deg;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100%;
+  opacity: 1;
+  transition: all 0.3s;
+}

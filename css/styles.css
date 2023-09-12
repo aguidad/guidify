@@ -104,7 +104,7 @@ a {
   color: white;
   font-size: 2rem;
   font-weight: 600;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   white-space: nowrap;
 }
 
@@ -122,7 +122,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .badge {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .badge--small {
@@ -209,6 +209,13 @@ a {
   white-space: nowrap;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 .btn-block {
   width: 100%;
   display: inline-block;
@@ -278,6 +285,7 @@ a {
   border-radius: var(--border-radius);
   border: 0.5px solid var(--color-radius);
   display: flex;
+  overflow: hidden;
 }
 
 .input-group .input {
@@ -291,7 +299,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .input {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -732,5 +740,33 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* Domain block */
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 700px;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.block-domain__prices > li {
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }

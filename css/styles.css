@@ -804,3 +804,29 @@ a {
     scale: 1;
   }
 }
+
+/* feature */
+
+.feature {
+  margin: 8rem 0;
+}
+
+.feature .grid {
+  gap: 12rem;
+}
+
+.feature .media {
+  flex-direction: column;
+}
+
+.feature .icon {
+  margin-left: 2rem;
+  padding: 1.4rem;
+  overflow: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}

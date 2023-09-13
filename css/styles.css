@@ -830,3 +830,28 @@ a {
     order: 2;
   }
 }
+
+/* showcase block*/
+
+.showcase .block__header {
+  margin-bottom: 5rem;
+}
+
+.showcase__content {
+  margin: 2rem;
+  margin-bottom: 15rem;
+}
+
+.showcase__content .media__body {
+  margin: 1rem 2rem;
+}
+
+.showcase__image {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .showcase {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  }
+}

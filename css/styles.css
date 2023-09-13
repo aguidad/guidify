@@ -332,6 +332,10 @@ a {
   color: white;
 }
 
+.card--primary .badge--primary {
+  background-color: #126de4;
+}
+
 .card--secondary .badge--secondary {
   background-color: #02cdf1;
 }
@@ -768,5 +772,35 @@ a {
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+
+/* plans block*/
+
+.block.grid {
+  gap: 8rem 5rem;
+}
+
+.block .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.block .plan {
+  transition: scale 0.3s ease-out;
+}
+
+.block .plan:hover {
+  scale: 1.15;
+}
+
+.block .popular__plan {
+  scale: 1.08;
+}
+
+@media screen and (max-width: 1024px) {
+  .block .plan:hover,
+  .block .popular__plan {
+    scale: 1;
   }
 }
